@@ -17,7 +17,6 @@ services:
 # for your Hasura instance. The value is visible under
 # Environment on the Render dashboard.
   - key: HASURA_GRAPHQL_ADMIN_SECRET
-    value: abc123456
     generateValue: true
 databases:
 - name: hasura
