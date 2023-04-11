@@ -3,7 +3,7 @@ services:
   name: hasura
   env: docker
   autoDeploy: false
-  healthCheckPath: /healthz
+  # healthCheckPath: /healthz
   envVars:
   - key: HASURA_GRAPHQL_DATABASE_URL
     fromDatabase:
@@ -16,7 +16,7 @@ services:
 # Uncomment to automatically generate an admin secret
 # for your Hasura instance. The value is visible under
 # Environment on the Render dashboard.
-#  - key: HASURA_GRAPHQL_ADMIN_SECRET
-#    generateValue: true
+ - key: HASURA_GRAPHQL_ADMIN_SECRET
+   generateValue: true
 databases:
 - name: hasura
